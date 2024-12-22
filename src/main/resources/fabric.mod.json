@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rip-saw",
+	"version": "${version}",
+	"name": "Rip Saw Mod",
+	"description": "This mod adds a block that is analogous to the Stone Cutter block, but is used for wood blocks instead.",
+	"authors": [
+		"Hegory"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/rip-saw/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.hegory.ripsaw.RipSawMod"
+		],
+		"fabric-datagen": [
+			"net.hegory.ripsaw.RipSawModDataGenerator"
+		],
+		"client": [
+			"net.hegory.ripsaw.RipSawModClient"
+		]
+	},
+	"mixins": [
+		"rip-saw.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
